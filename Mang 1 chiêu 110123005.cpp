@@ -77,5 +77,22 @@
  printf("\n tong snt cua mang la: %d", tong);
   printf("\n trong mang co %d snt",dem);
   }
- 
- 	
+
+
+
+
+  void timvitri(){
+  	int x, t=0
+   printf("\n nhap vao gia tri x:");
+  	scanf("&d",&x);
+  	
+  	
+  	for(i=0;i<n;i++){
+  	iff](x==a[i]){
+  		printf(" vi tri cua x la a[%d]", i);
+  		t++;
+    }
+  	}
+    if(t==0)
+    printf("\n x khong ton tai !");
+  }
