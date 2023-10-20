@@ -96,3 +96,25 @@
     if(t==0)
     printf("\n x khong ton tai !");
   }
+
+
+
+void chen(){
+  	n=n=1;
+  	int y, z;
+  	printf("\n nhap gia tri can chen la:");
+  	scanf("%d",&y);
+  	printf("\n nhap vi tri can chem:")
+  	scanf("%d",&z);
+  	for(i=n_1;i>z;i--){
+  		a[i]=a[i-1];
+  		a[z]=y;
+  		
+  	}
+  	
+  }
+   void timandxoae(){
+   	int e;
+   	printf("\n nhap gia tri can xoa:");
+   	scanf("%d", &e);
+   }
