@@ -21,7 +21,7 @@ void xuatMang(int arr[], int n) {
 
 
 void sapXepMang(int arr[], int n) {
-    std::sort(arr, arr + n);
+    sort(arr, arr + n);
 }
 
 
@@ -63,42 +63,42 @@ bool laSoNguyenTo(int num) {
 
 void demVaXuatSoNguyenTo(int arr[], int n) {
     int count = 0;
-    std::cout << "Cac so nguyen to trong mang la:\n";
+    cout << "Cac so nguyen to trong mang la:\n";
     for (int i = 0; i < n; ++i) {
         if (laSoNguyenTo(arr[i])) {
-            std::cout << arr[i] << " tai vi tri " << i << std::endl;
+            cout << arr[i] << " tai vi tri " << i << endl;
             count++;
         }
     }
-    std::cout << "Tong so luong so nguyen to trong mang la: " << count << std::endl;
+    std::cout << "Tong so luong so nguyen to trong mang la: " << count << endl;
 }
 
 int main() {
     const int MAX_SIZE = 100;
     int arr[MAX_SIZE], n, x;
 
-    std::cout << "Nhap so luong phan tu cua mang: ";
-    std::cin >> n;
+    cout << "Nhap so luong phan tu cua mang: ";
+    cin >> n;
 
     nhapMang(arr, n);
     sapXepMang(arr, n);
     xuatMang(arr, n);
 
-    std::cout << "Nhap so can tim kiem: ";
-    std::cin >> x;
+    cout << "Nhap so can tim kiem: ";
+    cin >> x;
 
     int viTriTuyenTinh = timKiemTuyenTinh(arr, n, x);
     if (viTriTuyenTinh != -1) {
-        std::cout << "Tim thay " << x << " tai vi tri " << viTriTuyenTinh << " (tuyen tinh).\n";
+        cout << "Tim thay " << x << " tai vi tri " << viTriTuyenTinh << " (tuyen tinh).\n";
     } else {
-        std::cout << "Khong tim thay " << x << " trong mang (tuyen tinh).\n";
+        cout << "Khong tim thay " << x << " trong mang (tuyen tinh).\n";
     }
 
     int viTriNhiPhan = timKiemNhiPhan(arr, n, x);
     if (viTriNhiPhan != -1) {
-        std::cout << "Tim thay " << x << " tai vi tri " << viTriNhiPhan << " (nhi phan).\n";
+        cout << "Tim thay " << x << " tai vi tri " << viTriNhiPhan << " (nhi phan).\n";
     } else {
-        std::cout << "Khong tim thay " << x << " trong mang (nhi phan).\n";
+        cout << "Khong tim thay " << x << " trong mang (nhi phan).\n";
     }
 
     demVaXuatSoNguyenTo(arr, n);
